@@ -14,12 +14,13 @@ import org.testng.annotations.Test;
 public class SeleniumCTCoTaskTest {
 
     @Test
-    public void TestProfessionalSkillsAndQualificationContainFiveSkills() {
+    public void testProfessionalSkillsAndQualificationContainFiveSkills() {
 
-        System.setProperty("webdriver.chrome.driver", "D:\\SeleniumChromeDriver\\chromedriver.exe");
+        String path = System.getProperty("user.dir");
+        System.setProperty("webdriver.chrome.driver",path+"\\driver\\chromedriver\\chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
-        WebDriverWait ewait = new WebDriverWait(driver, 3);
+        WebDriverWait explicitWait = new WebDriverWait(driver, 3);
 
         driver.get("https://ctco.lv/en");
 
@@ -28,8 +29,8 @@ public class SeleniumCTCoTaskTest {
         action.moveToElement(driver.findElement(By.cssSelector("a[href='https://ctco.lv/careers/']")))
                 .moveToElement(driver.findElement(By.xpath("//a[@href='https://ctco.lv/careers/vacancies/']"))).click().build().perform();
 
-        ewait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='menu-main-container']//ul//li[9]//a"))).click();
-        ewait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div[2]/div[2]/div[1]/div[15]/div/div/p[3]")));
+        explicitWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='menu-main-container']//ul//li[9]//a"))).click();
+        explicitWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div[2]/div[2]/div[1]/div[15]/div/div/p[3]")));
 
         WebElement complexOfSkills = driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[2]/div[1]/div[15]/div/div/p[3]"));
 
