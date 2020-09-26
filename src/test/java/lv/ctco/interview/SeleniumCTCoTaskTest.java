@@ -1,3 +1,5 @@
+package lv.ctco.interview;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,10 +11,10 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
-public class seleniumCTCoTaskTest {
+public class SeleniumCTCoTaskTest {
 
     @Test
-    public void testProfessionalSkillsAndQualificationContainFiveSkills() {
+    public void TestProfessionalSkillsAndQualificationContainFiveSkills() {
 
         System.setProperty("webdriver.chrome.driver", "D:\\SeleniumChromeDriver\\chromedriver.exe");
 
