@@ -2,7 +2,7 @@
 .idea/
 
 # file seleniumtesttask.iml
-.seleniumtesttask
+.seleniumtesttask/
 
 # folder target
-.target
+.target/
