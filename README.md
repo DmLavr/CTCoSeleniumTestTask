@@ -1,9 +1,9 @@
-##Description
+# Description
 
 This is a CTCo technical task for Selenium.
 
 
-##Requirments
+## Requirments
 
 Create a maven project that contains one test.
 Test should be executed by
@@ -17,7 +17,7 @@ Test should do following:
 5. Verify that paragraph under Professional skills and qualification: contains exactly 5 skills.
 (skills are separated by <br> tag)
 
-##How to
+## How to
 
 To run test:
 
