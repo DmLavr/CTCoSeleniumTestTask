@@ -1,8 +1,8 @@
 # folder .idea
 .idea/
 
-# file seleniumtesttask.iml
-.seleniumtesttask/
+# file type .iml
+*.iml
 
 # folder target
-.target/
+target/
