@@ -37,5 +37,7 @@ public class SeleniumCTCoTaskTest {
         String allParagraphs = complexOfSkills.getAttribute("innerHTML");
         String[] separateLinesOfText = allParagraphs.split("<br>");
         Assert.assertEquals(separateLinesOfText.length, 5);
+
+        driver.close();
     }
 }
